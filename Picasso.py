@@ -48,8 +48,8 @@ class Picasso():
 	def __init__(self, n_latent = 10, n_hidden = 128, epochs = 100,batch_size = 128, lr = 1e-3, weight_decay=1e-5, seed=None):
 		#super(NN_NCA, self).__init__()
 
-        if seed is not None:
-            torch.manual_seed(seed)
+		if seed is not None:
+			torch.manual_seed(seed)
 
 		self.n_latent = n_latent
 		self.epochs = epochs
